@@ -1,0 +1,26 @@
+{
+  "name": "orbitrap",
+  "version": "0.1.0",
+  "description": "fractal rendering with orbit traps",
+  "main": "index.js",
+  "author": "stgn",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "dat.gui": "^0.6.5",
+    "three": "^0.89.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  }
+}
